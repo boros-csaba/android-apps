@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name">CommonLibrary</string>
+
+    <!-- Navigation drawer -->
+    <string name="navigation_drawer_premium">Go Premium</string>
+    <string name="navigation_drawer_feedback">Send us feedback</string>
+    <string name="navigation_drawer_rate_app">Rate the app</string>
+    <string name="navigation_drawer_backup">Backup/Restore</string>
+    <string name="navigation_drawer_data_category_caption">Data</string>
+    <string name="navigation_drawer_settings">Settings</string>
+    <string name="navigation_drawer_data_policy">Data Policy</string>
+    <string name="navigation_drawer_cloud_sync">Sync across devices</string>
+    <string name="navigation_drawer_other_apps">Our apps - FREE Premium</string>
+
+    <!-- Send Feedback activity -->
+    <string name="activity_send_feedback_label">Message:</string>
+    <string name="activity_send_feedback_send_button">Send</string>
+
+    <!-- Go Premium activity -->
+    <string name="activity_go_premium_go_premium_exclamation">Go Premium!</string>
+    <string name="activity_go_premium_remove_ads_title">Remove Ads</string>
+    <string name="activity_go_premium_remove_ads_description">No more ads permanently and \n make more room for your goals.</string>
+    <string name="activity_go_premium_upcoming_features_title">Upcoming features</string>
+    <string name="activity_go_premium_upcoming_features_description">Support the developers and \n gain access to all the PRO features to come.</string>
+    <string name="activity_go_premium_buy_coffee">Buy us a coffee! :)</string>
+    <string name="activity_go_premium_short_description">Please help the development of the app by going premiumSKU. Thank you!</string>
+    <string name="activity_go_premium_advantages">- Remove ads forever\n- Gain access to all the PRO features (to come)\n- Unlimited number of goals\n- Higher priority for your feedback and feature requests</string>
+    <string name="go_premium_congratulations_message">To start using the Premium features please restart the application.</string>
+    <string name="dot" translatable="false">\u25CF</string>
+    <string name="no_free_version_without_ads">Unfortunately the free version of the app cannot be used without showing ads!</string>
+    <string name="close_app">Close app</string>
+
+    <!-- Backup activity -->
+    <string name="activity_backup_restart_app">Data successfully restored. The app needs to be restarted for the changes to take effect.</string>
+    <string name="activity_backup_backup_description">Export all your data to a single file so you can restore it at a later time. This can be useful especially if you are planning to change your device.</string>
+    <string name="activity_backup_restore_description">You can restore the state of the app to a previous state by using a backup file. Warning: By restoring the application data you will lose all your modifications made after the backup!</string>
+    <string name="backup_created_toast">Backup file saved.</string>
+
+    <!-- Data policy activity -->
+    <string name="data_policy_consent">By using this App you agree and consent to the bellow data policy.</string>
+    <string name="data_policy_first_heading">Your privacy is very important to us, and we take it seriously. Please read our Data Consent information below and let us know if you have any questions or other feedback regarding it.</string>
+    <string name="data_policy_advertising_title">Advertising</string>
+    <string name="data_policy_advertising_content">The app uses advertising to provide the content free of charge. When you use the app your device automatically sends certain information to our advertising partner, Admob. This information includes, for example, the name of the app, the device type, and the advertising ID. The information gathered is solely used to provide our advertising partners with the bare minimum of information they need to provide their services and combat click fraud.\nYou will be asked for consent before seeing any advertisements. The consent will be presented only if needed, when an advertisement would be displayed for the first time. You can change your consent settings any time on the Settings/Ads section.</string>
+    <string name="data_policy_admob_title">AdMob</string>
+    <string name="data_policy_admob_content">AdMob is an advertising service provided by AdMob Google Inc. Please read this overview of how they use information from sites or apps that use their services: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a> \nPersonal Data collected: Unique device identifiers for advertising. For example, Google Advertiser ID . \nPlace of processing: United States</string>
+    <string name="data_policy_analytics_title">Analytics</string>
+    <string name="data_policy_analytics_content">In the app we use analytics (usage and error data) in order to understand how users engage with our app and how to improve them and fix potential errors. When you use the app your device automatically sends certain information to our analytics partner Google Firebase. The information gathered includes, for example, the device type, the session length, and interactions with various user interface elements (buttons) in the app. The analytics data collected is anonymous and is not personal data. At first startup of an app we generate a random unique identifier which does not contain any personal information, and cannot be used to uncover any such information.\nBecause no personal data is sent to the analytics partner, no consent is required. Your identity cannot be traced back from the data that is sent.</string>
+    <string name="data_policy_owner_title">Owner and data controller</string>
+    <string name="data_policy_owner_content">Boros Csaba, 1193 Budapest, Hungary \nContact: boros.csaba94@gmail.com \nIf you have any question concerning our usage of  personal data please contact us.</string>
+    <string name="data_policy_last_updated">Last updated: 2018.05.25</string>
+    <string name="data_policy_link">Read online: %1$s</string>
+
+    <!-- SettingsHelper activity -->
+    <string name="settings_ads">Ads settings</string>
+    <string name="settings_description">Under GDPR we must ask your consent for displaying personalized ads. (P.S. Non-personalized ads are more annoying). Please take a look at our list of Ad technology providers we share data with: <a href="https://boroscsaba94.github.io/AdTechnologyProviders">https://boroscsaba94.github.io/AdTechnologyProviders</a></string>
+    <string name="settings_personalized_ads">Show personalized ads</string>
+    <string name="settings_non_personalized_ads">Only non-personalized ads</string>
+    <string name="settings_no_ads">Do not show ads</string>
+    <string name="date_format_title">Date format</string>
+    <string name="date_format_description">Select your date format</string>
+    <string name="date_format_ymd">Year/Month/Day</string>
+    <string name="date_format_dmy">Day/Month/Year</string>
+    <string name="date_format_mdy">Month/Day/Year</string>
+    <string name="notification_settings_title">Notification settings</string>
+    <string name="notification_settings_description">Notifications keep you on-schedule, help you to meet your deadlines and don`t forget your goals.</string>
+    <string name="notifications_enable">Enable notifications</string>
+    <string name="notifications_disable">Disable all notifications</string>
+    <string name="currency_setting_description">If you cannot find you currency please contact us!</string>
+
+    <!-- Cloud sync activity -->
+    <string name="cloud_sync_title">Data synchronization</string>
+    <string name="cloud_sync_activity_header">How does it work ?</string>
+    <string name="cloud_sync_description">To enable your data to be synchronized you must enable synchronization and log in with the same account on all you devices you wish to keep synchronized. Please note that by enabling synchronization you must agree to have your data uploaded to the Firebase Cloud servers!</string>
+    <string name="cloud_sync_enable">Enable synchronization</string>
+    <string name="cloud_sync_disable">Disable</string>
+    <string name="cloud_sync_sign_out">Sign out</string>
+    <string name="cloud_sync_logged_in_as">Logged in with %1$s</string>
+
+    <!-- Other Apps activity -->
+    <string name="get_free_premium">Go Premium for free!</string>
+    <string name="get_free_premium_description">Download and use all of our apps and get premium membership in all of them!</string>
+
+    <!-- Widget -->
+    <string name="select_item">Select item:</string>
+    <string name="not_item_available">Not item is available for the widget!</string>
+
+    <!-- Calendar -->
+    <string name="monday_code">M</string>
+    <string name="tuesday_code">T</string>
+    <string name="wednesday_code">W</string>
+    <string name="thursday_code">T</string>
+    <string name="friday_code">F</string>
+    <string name="saturday_code">S</string>
+    <string name="sunday_code">S</string>
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+
+    <!-- Simple strings -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="too_short">Too short!</string>
+    <string name="error">Error</string>
+    <string name="thank_you">Thank you!</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="done">Done</string>
+    <string name="undo">Undo</string>
+    <string name="delete">Delete</string>
+    <string name="delete_entry_prompt">Are you sure want to delete this entry ?</string>
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+    <string name="cancel">Cancel</string>
+    <string name="discard_changed">Are you sure you want to discard changes?</string>
+    <string name="discard">Discard</string>
+    <string name="ok">OK</string>
+    <string name="statistics">Statistics</string>
+    <string name="add_new">Add new</string>
+    <string name="on_date">on %1$s</string>
+    <string name="day">Day</string>
+    <string name="days">Days</string>
+    <string name="value">Value</string>
+    <string name="save">Save</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+    <string name="lets_start">Let`s Start</string>
+    <string name="date">Date</string>
+    <string name="currency">Currency</string>
+    <string name="send">Send</string>
+    <string name="stats">Stats</string>
+    <string name="search">Search</string>
+    <string name="edit">Edit</string>
+    <string name="hide">Hide</string>
+    <string name="show">Show</string>
+    <string name="listen">Listen</string>
+    <string name="translate">Translate</string>
+    <string name="download">Download</string>
+    <string name="star1">1 Star</string>
+    <string name="star2">2 Stars</string>
+    <string name="star3">3 Stars</string>
+    <string name="star4">4 Stars</string>
+    <string name="star5">5 Stars</string>
+    <string name="rate_us">Rate us!</string>
+    <string name="rate_us_title">Your opinion matters to us!</string>
+    <string name="please_rate_us">Please rate the app!</string>
+    <string name="please_rate_us_desc">We depend on ratings and reviews to succeed.</string>
+    <string name="rate_us_description">If you enjoy using the app,\n please take a moment to rate it.</string>
+    <string name="my_rating">My rating</string>
+    <string name="rate_app_comment">I think the app would be better if:\n</string>
+    <string name="stars">Stars</string>
+    <string name="close">Close</string>
+    <string name="total_balance">Total balance:</string>
+    <string name="add">Add</string>
+    <string name="subtract">Subtract</string>
+    <string name="amount">Amount</string>
+    <string name="name">Name</string>
+    <string name="unit">Unit</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="must_be_larger_than_0">Must be more than 0!</string>
+    <string name="must_be_positive_number">Must be a positive number!</string>
+    <string name="cannot_be_zero">Cannot be 0!</string>
+    <string name="welcome">Welcome!</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="icon">Icon</string>
+    <string name="dark_mode">Dark/Light mode</string>
+    <string name="dark_mode_description">Toggle between light and dark theme.</string>
+    <string name="disable_dark_mode">Disable dark mode</string>
+    <string name="select">Select:</string>
+    <string name="play_ad">Play ad</string>
+
+    <!-- Non translated -->
+    <string name="non_translated_standard_version" translatable="false">Standard</string>
+    <string name="non_translated_premium_version" translatable="false">Premium</string>
+    <string name="left_arrow" translatable="false">&lt;</string>
+    <string name="right_arrow" translatable="false">&gt;</string>
+    <string name="x" translatable="false">X</string>
+    <string name="dash" translatable="false">/</string>
+    <string name="timer_separator" translatable="false">:</string>
+    <string name="zero">0</string>
+
+    <!-- Technical -->
+    <string name="shared_preferences_name" translatable="false">com.boroscsaba.sharedPreferences</string>
+</resources>

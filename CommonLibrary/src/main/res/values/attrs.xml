@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="styleName" format="string" />
+    <attr name="rotate" format="boolean" />
+    <attr name="borderType">
+        <flag name="none" value="0"/>
+        <flag name="dashed" value="1"/>
+        <flag name="solid" value="2"/>
+        <flag name="rounded" value="4"/>
+        <flag name="shadow" value="8"/>
+        <flag name="roundedTop" value="16"/>
+    </attr>
+    <attr name="borderColor" format="color" />
+    <attr name="backgroundColor" format="color" />
+
+    <declare-styleable name="ConstraintLayout">
+        <attr name="rotate" />
+        <attr name="borderType" />
+        <attr name="styleName" />
+    </declare-styleable>
+
+    <declare-styleable name="AmountWithCurrencyView">
+        <attr name="imageSize" format="dimension" />
+        <attr name="textSize" format="dimension" />
+        <attr name="styleName" />
+    </declare-styleable>
+
+    <declare-styleable name="TextView">
+        <attr name="styleName" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageButton">
+        <attr name="styleName" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageView">
+        <attr name="styleName" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomCalendar">
+        <attr name="styleName" />
+    </declare-styleable>
+
+    <declare-styleable name="BarChart">
+        <attr name="styleName" />
+    </declare-styleable>
+
+    <declare-styleable name="LineChart">
+        <attr name="styleName" />
+    </declare-styleable>
+
+    <declare-styleable name="LinearLayout">
+        <attr name="styleName" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiStateToggle">
+        <attr name="styleName" />
+        <attr name="option1Text" format="string" />
+        <attr name="option2Text" format="string" />
+        <attr name="option3Text" format="string" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <com.boroscsaba.commonlibrary.views.TextView
+            android:id="@+id/leftArrow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="@string/left_arrow"
+            android:layout_marginStart="32dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="24sp"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <com.boroscsaba.commonlibrary.views.TextView
+            android:id="@+id/monthLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <com.boroscsaba.commonlibrary.views.TextView
+            android:id="@+id/rightArrow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="@string/right_arrow"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.boroscsaba.commonlibrary.views.TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/monday_code"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.boroscsaba.commonlibrary.views.TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tuesday_code"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.boroscsaba.commonlibrary.views.TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/wednesday_code"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.boroscsaba.commonlibrary.views.TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/thursday_code"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.boroscsaba.commonlibrary.views.TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/friday_code"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.boroscsaba.commonlibrary.views.TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/saturday_code"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.boroscsaba.commonlibrary.views.TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sunday_code"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/row5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/row6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+</LinearLayout>
