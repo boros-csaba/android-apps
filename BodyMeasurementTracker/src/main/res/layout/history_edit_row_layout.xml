@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/logDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/logValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_gravity="center"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/quickEditHistoryButton"
+        android:contentDescription="@string/edit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_edit_black_48dp"
+        android:tint="#777777" />
+
+    <ImageView
+        android:id="@+id/deleteHistoryButton"
+        android:contentDescription="@string/save"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_delete_forever_white_48dp"
+        android:tint="#666666" />
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boroscsaba.commonlibrary.views.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/weightHeightContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:elevation="5dp"
+    android:paddingTop="8dp"
+    app:borderColor="#555555"
+    app:borderType="dashed">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/weightTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/weight"
+        android:layout_margin="24dp"
+        app:hintTextAppearance="@android:style/TextAppearance.Medium"
+        app:layout_constraintEnd_toStartOf="@+id/lbs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:passwordToggleDrawable="@null"
+        app:layout_constraintHorizontal_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="viewEnd"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lbs"
+        android:text="@string/lbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/weightTextInputLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/weightTextInputLayout"
+        app:layout_constraintTop_toTopOf="@+id/weightTextInputLayout"
+        app:layout_constraintEnd_toStartOf="@+id/kg"/>
+
+    <TextView
+        android:id="@+id/kg"
+        android:text="@string/kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:layout_constraintStart_toEndOf="@+id/inch"
+        app:layout_constraintBottom_toBottomOf="@+id/weightTextInputLayout"
+        app:layout_constraintTop_toTopOf="@+id/weightTextInputLayout"
+        app:layout_constraintEnd_toStartOf="@+id/st"/>
+
+    <TextView
+        android:id="@+id/st"
+        android:text="@string/st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintStart_toEndOf="@+id/kg"
+        app:layout_constraintBottom_toBottomOf="@+id/weightTextInputLayout"
+        app:layout_constraintTop_toTopOf="@+id/weightTextInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/heightTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:hint="@string/height"
+        app:hintTextAppearance="@android:style/TextAppearance.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/weightTextInputLayout"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/weightTextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/weightTextInputLayout"
+        app:passwordToggleDrawable="@null">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:inputType="number|numberDecimal"
+            android:maxLines="1"
+            android:textAlignment="viewEnd"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/inch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        android:text="@string/inch"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/heightTextInputLayout"
+        app:layout_constraintEnd_toStartOf="@+id/cm"
+        app:layout_constraintStart_toStartOf="@+id/lbs"
+        app:layout_constraintTop_toTopOf="@+id/heightTextInputLayout"/>
+
+    <TextView
+        android:id="@+id/cm"
+        android:text="@string/cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:layout_constraintStart_toEndOf="@+id/inch"
+        app:layout_constraintBottom_toBottomOf="@+id/heightTextInputLayout"
+        app:layout_constraintTop_toTopOf="@+id/heightTextInputLayout"
+        app:layout_constraintEnd_toEndOf="@id/st"/>
+
+    <ImageView
+        android:id="@+id/male"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:padding="6dp"
+        android:contentDescription="@string/male"
+        android:src="@drawable/ic_man"
+        android:tint="#555555"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/female"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightTextInputLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/female"
+        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/female"
+        android:src="@drawable/ic_woman"
+        android:tint="#aaaaaa"
+        android:padding="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/male"
+        app:layout_constraintTop_toBottomOf="@+id/heightTextInputLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/male" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:contentDescription="@string/save"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_check_white_48dp"
+        android:tint="#666666"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator"/>
+
+</com.boroscsaba.commonlibrary.views.ConstraintLayout>

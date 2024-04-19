@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/color0"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/circle"
+            android:tint="#F44336"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/color1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/circle"
+            android:tint="#2196F3"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/color2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/circle"
+            android:tint="#009688"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/color3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/circle"
+            android:tint="#FFEB3B"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/color4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/circle"
+            android:tint="#795548"
+            tools:ignore="ContentDescription"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/color5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/circle"
+            android:tint="#4CAF50"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/color6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/circle"
+            android:tint= "#9C27B0"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/color7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/circle"
+            android:tint="#9E9E9E"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/color8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/circle"
+            android:tint="#E91E63"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/color9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/circle"
+            android:tint="#FF9800"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

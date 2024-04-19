@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name_release">Body Measurements Tracker</string>
+    <!-- Main page -->
+    <string name="missingBmiData">Height and Weight data is required \n to calculate your BMI.</string>
+    <string name="bmi_label">BMI</string>
+    <string name="log">Log</string>
+    <string name="stats">Stats</string>
+    <string name="manage_dashboard">Manage Dashboard</string>
+    <string name="no_enough_data">NO ENOUGH DATA</string>
+    <string name="add_new_parameter">New parameter</string>
+    <string name="edit_history">Edit history</string>
+    <string name="add_measurements">+ Add new</string>
+    <string name="add_measurements_long">Add measurements</string>
+    <string name="first_start_greeting">Keep track of you body measurements and the app will help you stay motivated and on track!</string>
+    <string name="add_weight_height_message">Fill in the form and let`s get started!</string>
+    <string name="try_dashboard_manager">Check out the dashboard manager!</string>
+    <string name="try_dashboard_manager_description">On the dashboard manager page you can toggle the visibility and change the ordering of the parameters on your dashboard.\n Give it a try!</string>
+
+
+    <!-- Add Parameter Activity -->
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="waist">Waist</string>
+    <string name="hips">Hips</string>
+    <string name="height_label">Height:</string>
+    <string name="weight_label">Weight:</string>
+    <string name="tutorial_parameter_name_label">Parameter \nname</string>
+    <string name="current_value_tutorial_label">Current value</string>
+    <string name="sex">Sex</string>
+
+
+    <!-- Settings -->
+    <string name="sex_setting_description">Select your sex</string>
+
+    <!-- Edit Parameter Activity -->
+    <string name="delete_parameter">Are you sure you want to delete this parameter with all the measurements ?</string>
+    <string name="delete_measurement_log">Are you sure you want to delete this log ?</string>
+    <string name="preset_parameters">Or choose from the preset parameters:</string>
+    <string name="parameter_name_example">e.g: Biceps</string>
+    <string name="parameter_value_example">43</string>
+
+    <!-- Simple strings -->
+    <string name="measurement_unit">Measurement unit</string>
+    <string name="too_short">Too short!</string>
+    <string name="icon_color">Icon color</string>
+    <string name="measurement_value">Value</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="start">Start</string>
+    <string name="next">Next</string>
+    <string name="inch">in</string>
+    <string name="cm">cm</string>
+    <string name="lbs">lbs</string>
+    <string name="kg">kg</string>
+    <string name="st">st</string>
+    <string name="dash_separator" translatable="false">/</string>
+    <string name="edit">Edit</string>
+    <string name="custom_unit">Custom unit:</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:configure="com.boroscsaba.bodymeasurementtracker.widget.WidgetConfigureActivity"
+    android:initialKeyguardLayout="@layout/dashboard_item_view"
+    android:initialLayout="@layout/dashboard_item_view"
+    android:minHeight="70dp"
+    android:minWidth="180dp"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="86400000"
+    android:widgetCategory="home_screen|keyguard"
+    android:previewImage="@drawable/widget_preview" />

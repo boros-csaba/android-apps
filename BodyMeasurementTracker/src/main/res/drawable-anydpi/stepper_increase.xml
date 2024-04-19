@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <size
+                        android:height="47dp"
+                        android:width="47dp" />
+                    <solid android:color="@color/colorAccent" />
+                    <corners android:bottomRightRadius="10dp"
+                        android:topRightRadius="10dp" />
+                </shape>
+            </item>
+            <item
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp"
+                android:bottom="1dp">
+                <shape android:shape="rectangle">
+                    <size
+                        android:height="47dp"
+                        android:width="47dp" />
+                    <solid android:color="#ffffff" />
+                    <corners android:bottomRightRadius="10dp"
+                        android:topRightRadius="10dp" />
+                </shape>
+            </item>
+            <item
+                android:left="10dp"
+                android:right="10dp"
+                android:top="2dp">
+                <shape android:shape="line">
+                    <stroke
+                        android:width="2dp"
+                        android:color="@color/colorAccent" />
+                </shape>
+            </item>
+            <item
+                android:left="10dp"
+                android:right="10dp"
+                android:top="2dp">
+                <rotate
+                    android:fromDegrees="90"
+                    android:pivotX="50%"
+                    android:pivotY="50%"
+                    android:toDegrees="-90">
+                    <shape android:shape="line">
+                        <stroke
+                            android:width="2dp"
+                            android:color="@color/colorAccent" />
+                    </shape>
+                </rotate>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <size
+                        android:height="47dp"
+                        android:width="47dp" />
+                    <solid android:color="@color/colorAccent" />
+                    <corners android:bottomRightRadius="10dp"
+                        android:topRightRadius="10dp" />
+                </shape>
+            </item>
+            <item
+                android:left="10dp"
+                android:right="10dp"
+                android:top="2dp">
+                <shape android:shape="line">
+                    <stroke
+                        android:width="2dp"
+                        android:color="#ffffff" />
+                </shape>
+            </item>
+            <item
+                android:left="10dp"
+                android:right="10dp"
+                android:top="2dp">
+                <rotate
+                    android:fromDegrees="90"
+                    android:pivotX="50%"
+                    android:pivotY="50%"
+                    android:toDegrees="-90">
+                    <shape android:shape="line">
+                        <stroke
+                            android:width="2dp"
+                            android:color="#ffffff" />
+                    </shape>
+                </rotate>
+            </item>
+        </layer-list>
+    </item>
+</selector>
