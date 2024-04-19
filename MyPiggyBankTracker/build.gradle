@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'io.fabric'
+apply plugin: 'com.google.firebase.firebase-perf'
+
+def testingVersion = 0
+def versionMajor = 4
+def versionMinor = 1
+def versionPatch = 2
+
+repositories {
+    jcenter()
+    maven {
+        url "https://maven.google.com"
+    }
+    maven {
+        url "https://maven.fabric.io/public"
+    }
+}
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.boroscsaba.myapplication"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode versionMajor * 10000 + versionMinor * 100 + versionPatch + testingVersion * 1000000
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs {
+        key {
+            
+        }
+    }
+
+    buildTypes {
+        debug {
+            resValue 'string', 'app_name', 'DEBUG My Piggy Bank Tracker'
+            resValue 'string', 'app_version', "${defaultConfig.versionName}"
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.key
+
+            manifestPlaceholders = [filesAuthority: "com.boroscsaba.myapplication.debug.files", contentAuthority: "com.boroscsaba.myapplication.debug.provider"]
+            buildConfigField "String", "FILES_AUTHORITY", '"com.boroscsaba.myapplication.debug.files"'
+            buildConfigField "String", "CONTENT_AUTHORITY", '"com.boroscsaba.myapplication.debug.provider"'
+            applicationIdSuffix '.debug'
+
+            debuggable true
+            ext.alwaysUpdateBuildId = false
+        }
+        release {
+            resValue 'string', 'app_name', '@string/app_name_release'
+            resValue 'string', 'app_version', "${defaultConfig.versionName}"
+            signingConfig signingConfigs.key
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            manifestPlaceholders = [filesAuthority: "com.boroscsaba.myapplication.files", contentAuthority: "com.boroscsaba.myapplication.provider"]
+            buildConfigField "String", "FILES_AUTHORITY", '"com.boroscsaba.myapplication.files"'
+            buildConfigField "String", "CONTENT_AUTHORITY", '"com.boroscsaba.myapplication.provider"'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation("com.crashlytics.sdk.android:crashlytics:$crashlytics_version") {
+        transitive = true
+    }
+    implementation project(':dataaccess')
+    implementation project(':commonlibrary')
+
+    implementation androidx.constraintLayout
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha02'
+
+    implementation firebase.ads
+    implementation firebase.core
+    implementation firebase.performance
+    implementation firebase.analytics
+    implementation misc.glide
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.firebase-perf'
+apply plugin: 'project-report'
