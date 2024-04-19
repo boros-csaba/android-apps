@@ -1,0 +1,16 @@
+*.iml
+*.dll
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+keystores/
+*.hprof
+BodyMeasurementTracker/release/BodyMeasurementTracker.aab
+BodyMeasurementsAndWeightLossTracker/release/BodyMeasurementsAndWeightLossTracker-release.aab
+EnglishIrregularVerbsMemorizer/release/EnglishIrregularVerbsMemorizer.aab
+MyPiggyBankTracker/release/MyPiggyBankTracker.aab
+FastingLifestyleTimerAndTracker/release/FastingLifestyleTimerAndTracker.aab

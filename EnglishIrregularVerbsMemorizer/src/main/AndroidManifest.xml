@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.boroscsaba.englishirregularverbsmemorizer">
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".EnglishIrregularVerbsMemorizer"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name=".dataAccess.AppContentProvider"
+            android:authorities="${contentAuthority}"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <activity
+            android:name="com.boroscsaba.commonlibrary.splashscreen.SplashScreenActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.boroscsaba.commonlibrary.activities.OnBoarding"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.StatsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="cbf5eea30438910f0e89cc727d93a0cdd4e5d542" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7535188687645300~9590164739" />
+    </application>
+
+</manifest>
