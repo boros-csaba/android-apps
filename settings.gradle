@@ -1,0 +1,1 @@
+include ':MyPiggyBankTracker', ':dataaccess', ':commonlibrary', ':BodyMeasurementTracker', ':FastingLifestyleTimerAndTracker', ':EnglishIrregularVerbsMemorizer', ':SavingsGoalsTracker', ':BodyMeasurementsAndWeightLossTracker', ':WeeksMoneySavingChallenge', ':MyWeightLossTracker'

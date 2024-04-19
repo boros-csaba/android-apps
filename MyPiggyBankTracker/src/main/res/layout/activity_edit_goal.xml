@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:id="@+id/bigIcon"
+            android:src="@drawable/icon_none"
+            tools:ignore="ContentDescription"
+            android:transitionName="goalIconTransition"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@drawable/icon_home"
+                    tools:ignore="ContentDescription"
+                    android:id="@+id/homeIcon"
+                    android:layout_marginStart="5dp"/>
+
+                <ImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@drawable/icon_car"
+                    tools:ignore="ContentDescription"
+                    android:id="@+id/carIcon"
+                    android:layout_marginStart="5dp"/>
+
+                <ImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@drawable/icon_university"
+                    tools:ignore="ContentDescription"
+                    android:id="@+id/universityIcon"
+                    android:layout_marginStart="5dp"/>
+
+                <ImageView
+                    android:layout_height="25dp"
+                    android:layout_width="25dp"
+                    android:background="@drawable/ic_photo_library_black_48dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/selectImageButton"
+                    android:backgroundTint="#666666"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@drawable/icon_travel"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/travelIcon"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@drawable/icon_devices"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/devicesIcon"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@drawable/icon_gift"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/giftIcon"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/takePhotoButton"
+                    android:layout_height="25dp"
+                    android:layout_width="25dp"
+                    android:background="@drawable/ic_photo_camera_black_48dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="5dp"
+                    android:backgroundTint="#666666"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/goalTitleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/activity_edit_goal_title_hint"
+        android:labelFor="@+id/goalTitleEditText"
+        app:passwordToggleDrawable="@null"
+        android:theme="@style/AppTheme">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@id/goalTitleEditText"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/targetAmountInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/activity_edit_goal_amount_hint"
+        android:labelFor="@+id/targetAmountEditText"
+        app:passwordToggleDrawable="@null"
+        android:theme="@style/AppTheme">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@id/targetAmountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="25sp"
+            android:maxLines="1"
+            android:labelFor="@id/targetAmountInput" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/startingAmountInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/activity_edit_goal_starting_amount_hint"
+        android:layout_marginTop="5dp"
+        android:labelFor="@+id/startingAmountEditText"
+        app:passwordToggleDrawable="@null"
+        android:theme="@style/AppTheme">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@id/startingAmountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="25sp"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_currency_text"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/currencySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dueDateInput"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/edit_due_date_hint"
+            android:labelFor="@+id/dueEditText"
+            app:passwordToggleDrawable="@null"
+            app:hintTextAppearance="@android:style/TextAppearance.Medium">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@id/dueEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textSize="25sp"
+                android:maxLines="1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/notificationButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/ic_notifications_active_black_48dp"
+            android:tint="#555555"
+            android:layout_gravity="bottom|end"
+            android:clickable="true"
+            android:focusable="true"
+            android:tag="enabled"
+            android:contentDescription="@string/notifications_enable"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

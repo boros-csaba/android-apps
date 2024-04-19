@@ -1,0 +1,1 @@
+-keepattributes *Annotation*, Signature, Exception, SourceFile, LineNumberTable

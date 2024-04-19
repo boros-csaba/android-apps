@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="0dp">
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="@string/started_at_label" />
+
+        <TextView
+            android:id="@+id/started_at_time"
+            android:layout_width="0dp"
+            android:textSize="21sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:gravity="end"/>
+
+        <ImageView
+            android:id="@+id/started_at_time_button"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:tint="#888888"
+            android:padding="10dp"
+            android:src="@drawable/ic_edit_black_48dp"
+            android:contentDescription="@string/started_at_label"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="@string/target_hours"/>
+
+        <TextView
+            android:id="@+id/goal"
+            android:layout_width="0dp"
+            android:textSize="21sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:gravity="end" />
+
+        <ImageView
+            android:id="@+id/goalButton"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:tint="#888888"
+            android:padding="10dp"
+            android:src="@drawable/ic_edit_black_48dp"
+            android:contentDescription="@string/started_at_label"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

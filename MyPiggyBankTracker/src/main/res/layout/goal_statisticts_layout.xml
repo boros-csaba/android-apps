@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp">
+
+    <com.boroscsaba.commonlibrary.views.TextView
+        android:id="@+id/goalAddedOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="13sp"
+        app:styleName="LIGHT" />
+
+    <com.boroscsaba.commonlibrary.views.TextView
+        android:id="@+id/goalOpenFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="13sp"
+        app:styleName="LIGHT" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <com.boroscsaba.commonlibrary.views.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/you_saved_on_average"
+            android:textSize="13sp"
+            app:styleName="LIGHT" />
+
+        <com.boroscsaba.commonlibrary.viewelements.currency.AmountWithCurrencyView
+            android:id="@+id/savedOnAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:textSize="13sp"
+            app:imageSize="13dp"
+            app:styleName="LIGHT" />
+
+        <com.boroscsaba.commonlibrary.views.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/you_saved_on_average_end"
+            android:textSize="13sp"
+            app:styleName="LIGHT" />
+
+    </LinearLayout>
+
+    <com.boroscsaba.commonlibrary.views.TextView
+        android:id="@+id/expectedEndDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/with_this_pace"
+        android:textSize="13sp"
+        app:styleName="LIGHT" />
+
+    <com.boroscsaba.commonlibrary.views.TextView
+        android:id="@+id/expectedEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="13sp"
+        app:styleName="LIGHT" />
+
+</LinearLayout>

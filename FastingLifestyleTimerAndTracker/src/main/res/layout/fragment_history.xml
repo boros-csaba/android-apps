@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.boroscsaba.fastinglifestyletimerandtracker.activities.MainActivity">
+
+    <com.boroscsaba.commonlibrary.viewelements.CustomCalendar
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

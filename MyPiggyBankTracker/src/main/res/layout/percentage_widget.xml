@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:id="@+id/percentageWidgetBarContainer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="70">
+
+        <TextView
+            android:id="@+id/percentage_widget_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginStart="10dp"
+            android:textColor="#ffffff"/>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/simple_progress_bar"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="#00000000"
+                android:id="@+id/progressBar_Text_TextView"
+                android:layout_alignStart="@id/progressBar"
+                android:layout_alignTop="@id/progressBar"
+                android:layout_alignEnd="@id/progressBar"
+                android:layout_alignBottom="@id/progressBar"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/percentage_widget_plus_button"
+        android:layout_weight="30"
+        android:layout_height="35dp"
+        android:layout_width="50dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/round_button" />
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name_release">English Irregular Verbs Memorizer</string>
+    <string name="no_more_verbs">You have memorized all the verbs!</string>
+    <string name="simple_past">Simple Past</string>
+    <string name="past_participle">Past Participle</string>
+    <string name="wrong_answer">Oops… wrong answer!</string>
+    <string name="correct_answers_label">Correct answers:</string>
+    <string name="daily_goal">Daily goal</string>
+    <string name="daily_goal_description">Set your daily goal.</string>
+    <string name="daily_goal_met">You`ve met your daily goal!</string>
+    <string name="tutorial_simple_past">Enter \"began\"</string>
+    <string name="tutorial_past_participle">Enter \"begun\"</string>
+</resources>

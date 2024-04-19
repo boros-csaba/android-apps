@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.boroscsaba.commonlibrary.views.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:layout_margin="8dp"
+    android:elevation="5dp"
+    app:styleName="PARAMETER">
+
+    <com.boroscsaba.commonlibrary.views.TextView
+        android:id="@+id/parameterNameTextView"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/parameterValue"
+        app:layout_constraintBottom_toTopOf="@+id/changeDirection" />
+
+    <ImageView
+        android:id="@+id/changeDirection"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        tools:ignore="ContentDescription"
+        android:tint="#777777"
+        android:src="@drawable/ic_arrow_downward_white_48dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/parameterNameTextView"
+        app:layout_constraintStart_toStartOf="@+id/parameterNameTextView"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.boroscsaba.commonlibrary.views.TextView
+        android:id="@+id/changeAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="@+id/changeDirection"
+        app:layout_constraintStart_toEndOf="@+id/changeDirection"
+        app:layout_constraintBottom_toBottomOf="@+id/changeDirection"
+        app:styleName="LIGHT" />
+
+    <com.boroscsaba.commonlibrary.views.TextView
+        android:id="@+id/parameterValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/parameterNameTextView"
+        app:layout_constraintEnd_toStartOf="@+id/addMeasurementButton"
+        app:layout_constraintBottom_toTopOf="@+id/dateTextView"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.boroscsaba.commonlibrary.views.TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/parameterValue"
+        app:layout_constraintStart_toStartOf="@+id/parameterValue"
+        app:layout_constraintEnd_toEndOf="@+id/parameterValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:styleName="LIGHT"/>
+
+    <com.boroscsaba.commonlibrary.views.ImageButton
+        android:id="@+id/addMeasurementButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_white_48dp"
+        android:contentDescription="@string/add_new"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:styleName="ADD_MEASUREMENT"/>
+
+    <com.boroscsaba.commonlibrary.views.TextView
+        android:id="@+id/addFirstMeasurementLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/add_your_first_measurement"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addMeasurementButton"
+        app:layout_constraintBottom_toBottomOf="@+id/tutorialArrow" />
+
+    <com.boroscsaba.commonlibrary.views.TutorialArrow
+        android:id="@+id/tutorialArrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleY="-1"
+        android:rotation="30"
+        app:layout_constraintTop_toTopOf="@+id/addFirstMeasurementLabel"
+        app:layout_constraintStart_toEndOf="@+id/addFirstMeasurementLabel"
+        app:layout_constraintEnd_toStartOf="@+id/addMeasurementButton"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</com.boroscsaba.commonlibrary.views.ConstraintLayout>

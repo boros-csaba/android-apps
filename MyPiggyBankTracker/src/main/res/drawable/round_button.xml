@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <size
+                        android:height="30dp"
+                        android:width="30dp" />
+                    <corners android:radius="10000dp" />
+                    <solid android:color="#83b400" />
+                    <padding
+                        android:bottom="10dp"
+                        android:left="10dp"
+                        android:right="10dp"
+                        android:top="10dp" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="line">
+                    <stroke
+                        android:width="2dp"
+                        android:color="@android:color/white" />
+                </shape>
+            </item>
+            <item>
+                <rotate
+                    android:fromDegrees="90"
+                    android:pivotX="50%"
+                    android:pivotY="50%"
+                    android:toDegrees="-90">
+                    <shape android:shape="line">
+                        <stroke
+                            android:width="2dp"
+                            android:color="@android:color/white" />
+                    </shape>
+                </rotate>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <size
+                        android:height="30dp"
+                        android:width="30dp" />
+                    <corners android:radius="10000dp" />
+                    <solid android:color="#c5ef54" />
+                    <padding
+                        android:bottom="10dp"
+                        android:left="10dp"
+                        android:right="10dp"
+                        android:top="10dp" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="line">
+                    <stroke
+                        android:width="2dp"
+                        android:color="@android:color/white" />
+                </shape>
+            </item>
+            <item>
+                <rotate
+                    android:fromDegrees="90"
+                    android:pivotX="50%"
+                    android:pivotY="50%"
+                    android:toDegrees="-90">
+                    <shape android:shape="line">
+                        <stroke
+                            android:width="2dp"
+                            android:color="@android:color/white" />
+                    </shape>
+                </rotate>
+            </item>
+        </layer-list>
+    </item>
+</selector>

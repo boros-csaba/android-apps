@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name_release">Intermittent Fasting Lifestyle - Timer and Tracker</string>
+
+    <!-- Edit fast dialog -->
+    <string name="edit_fast_label">EDIT EATING WINDOW</string>
+    <string name="new_eating_window">New eating window</string>
+    <string name="target_hours">Goal</string>
+    <string name="duration">Duration</string>
+    <string name="started_at_label">Started at</string>
+    <string name="ended_at_label">Last meal</string>
+    <string name="continue_fast">Keep going</string>
+    <string name="end_fast">End eating window</string>
+    <string name="start_eating_window">Start eating window</string>
+    <string name="stop">Stop timer</string>
+    <string name="start_description">The timer will track your eating window. You are not allowed to eat outside of this time frame!</string>
+    <string name="timer_description">left to eat</string>
+    <string name="feast_duration_setting">Set the duration of your eating window:</string>
+    <string name="times_up">Time`s up!</string>
+    <string name="delete_sure">Are you sure you want to permanently delete this eating window ?</string>
+    <string name="running_timer">Running timer</string>
+
+    <!-- On Boarding -->
+    <string name="on_boarding_tracker_title">Track your eating window</string>
+    <string name="on_boarding_tracker_desc">More and more research is showing that Intermittent fasting can help you lose weight and increase your energy!</string>
+    <string name="on_boarding_progress_title">Keep track of your progress</string>
+    <string name="on_boarding_progress_desc">As the saying goes:\n What gets measured gets improved!\nWe can help you with Calendars, Lists and Charts.</string>
+    <string name="on_boarding_disclaimer_title">Disclaimer</string>
+    <string name="on_boarding_disclaimer_desc">You should consult your physician or other health care professional before starting this or any other fitness program to determine if it is right for your needs. This app is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Use at your own risk.</string>
+
+</resources>

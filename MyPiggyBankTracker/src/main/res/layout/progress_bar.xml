@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent" >
+
+    <ImageView
+        android:id="@+id/progressBarImage"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/double_progress_bar"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="#00000000"
+        android:id="@+id/progressBarText"
+        android:layout_alignStart="@id/progressBarImage"
+        android:layout_alignTop="@id/progressBarImage"
+        android:layout_alignEnd="@id/progressBarImage"
+        android:layout_alignBottom="@id/progressBarImage"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:gravity="end"
+        android:background="#00000000"
+        android:text="@string/progressBarPlusSign"
+        android:id="@+id/progressBarPlusSign"
+        android:layout_alignStart="@id/progressBarImage"
+        android:layout_alignTop="@id/progressBarImage"
+        android:layout_alignEnd="@id/progressBarImage"
+        android:layout_alignBottom="@id/progressBarImage"
+        android:layout_marginEnd="10dp"/>
+
+</RelativeLayout>
+

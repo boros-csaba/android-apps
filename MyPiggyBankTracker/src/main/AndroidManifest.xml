@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.boroscsaba.myapplication">
+ 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:name="com.boroscsaba.myapplication.MyPiggyBankTracker"
+        android:supportsRtl="false"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${filesAuthority}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <provider
+            android:name="com.boroscsaba.myapplication.dataAccess.AppContentProvider"
+            android:authorities="${contentAuthority}"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7535188687645300~5462955279"/>
+
+        <activity
+            android:name="com.boroscsaba.commonlibrary.splashscreen.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.GoalsListView"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.GoalDetailsView"
+            android:label="TransactionsActivity"
+            android:parentActivityName=".view.GoalsListView"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boroscsaba.myapplication.view.GoalsListView" />
+        </activity>
+        <activity
+            android:name=".activities.EditGoalActivity"
+            android:label="@string/title_activity_settings_transaction"
+            android:parentActivityName=".activities.EditGoalActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boroscsaba.myapplication.activities.EditGoalActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EditTransactionActivity"
+            android:label="@string/title_activity_edit_transaction"
+            android:parentActivityName=".activities.EditTransactionActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boroscsaba.myapplication.activities.EditTransactionActivity" />
+        </activity>
+        <activity
+            android:name=".view.OverviewView"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".view.OverviewView" />
+
+        <receiver android:name=".activities.PercentageWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/percentage_widget_info" />
+        </receiver>
+        <receiver
+            android:name=".technical.NotificationPublisher"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.NOTIFY" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.boroscsaba.myapplication.technical.RebootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activities.PercentageWidgetConfigureActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="cbf5eea30438910f0e89cc727d93a0cdd4e5d542" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+    </application>
+
+</manifest>

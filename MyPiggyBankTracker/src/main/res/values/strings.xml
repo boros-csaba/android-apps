@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name_release">My Piggy Bank Tracker</string>
+    <string name="default_currency">USD</string>
+
+    <!-- Main Activity -->
+    <string name="main_activity_title">My goals</string>
+    <string name="due_date_label">Due:</string>
+    <string name="percentage_display_percentage">Percentage (e.g.: 75%)</string>
+    <string name="percentage_display_left">Amount left (e.g.: $25 left)</string>
+    <string name="percentage_display_collected">Amount collected: (e.g.: $75 in)</string>
+    <string name="percentage_display_title">Progress display format</string>
+    <string name="percentage_display_description">Select the format in which the progress will be shown in the goals list</string>
+
+    <!-- Main Activity tutorial -->
+    <string name="main_activity_tutorial_first_line">It looks lonely in here!</string>
+    <string name="main_activity_tutorial_second_line">Add some goals and start saving!</string>
+
+    <!-- Edit Goal Activity -->
+    <string name="activity_edit_goal_title_hint">Title</string>
+    <string name="activity_edit_goal_amount_hint">Goal amount</string>
+    <string name="activity_edit_goal_starting_amount_hint">Starting amount</string>
+    <string name="activity_edit_goal_target_smaller_than_starting_error">Must be less than the goal amount!</string>
+    <string name="activity_edit_goal_delete_alert">Are you sure want to permanently delete this goal ?</string>
+    <string name="edit_due_date_hint">Due date</string>
+    <string name="due_today">Due Today</string>
+    <string name="due_tomorrow">Due Tomorrow</string>
+    <string name="overdue">Overdue</string>
+
+    <!-- Goal Overview Activity -->
+    <string name="goal_added_on">Goal added on %1$s</string>
+    <string name="goal_was_open_for">and was open for %1$d days.</string>
+    <string name="you_saved_on_average">You saved </string>
+    <string name="you_saved_on_average_end">/day on average</string>
+    <string name="with_this_pace">and with this pace the goal will be</string>
+    <string name="completed_in_days_text">completed in %1$d days on %2$s</string>
+
+    <!-- Edit Transaction Activity -->
+    <string name="activity_edit_transaction_delete_alert">Are you sure you want to delete this transaction ?</string>
+
+    <string name="settings_currency_text">Currency: </string>
+
+    <string name="edit_title">New transaction</string>
+    <string name="edit_amount_hint">Amount</string>
+    <string name="edit_title_text">Desc.:</string>
+    <string name="edit_date_hint">Date</string>
+
+    <string name="title_activity_edit_transaction" translatable="false">EditTransactionActivity</string>
+    <string name="title_activity_settings_transaction" translatable="false">SettingsTransactionActivity</string>
+
+    <string name="progressBarPlusSign" translatable="false">+</string>
+
+    <!-- Overview activity -->
+    <string name="completed_goals">Completed goals:</string>
+    <string name="no_completed_goals_yet">You have not completed any goals yet!</string>
+    <string name="total_saved">Total saved:</string>
+    <string name="current_total">Current total:</string>
+    <string name="active_goals">Active goals:</string>
+    <string name="daily_average_saving">Daily average saving:</string>
+    <string name="all_transactions">All transactions:</string>
+    <string name="average_transaction">Average transaction:</string>
+    <string name="amount_left">Amount left:</string>
+    <string name="expected_completion">Expected completion:</string>
+    <string name="last_month_savings">Last 30 days savings:</string>
+    <string name="last_week_savings">Last 7 days savings:</string>
+
+    <!-- Simple strings -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cannot_be_zero">Cannot be 0!</string>
+    <string name="thank_you">Thank you!</string>
+    <string name="error">Error</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="discard">Discard</string>
+    <string name="discard_changed">Are you sure you want to discard changes?</string>
+    <string name="days_left">%d days left</string>
+    <string name="goal_completed">Goal completed.</string>
+    <string name="days">days</string>
+    <string name="completed_goals_menu">Completed Goals</string>
+
+    <!-- Premium features -->
+    <string name="premium_feature_unlimited_goals_title">No limits</string>
+    <string name="premium_feature_unlimited_goals_description">Remove the 7 active goals limit \n and record as many goals as you like.</string>
+
+    <!-- Widget -->
+    <string name="percentage_widget_select_goal">Select a goal:</string>
+    <string name="percentage_widget_no_goal_available">No goal is available!</string>
+
+    <!-- Non Translated -->
+    <string name="non_translated_save">Save</string>
+    <string name="non_translated_edit">Edit</string>
+    <string name="non_translated_drawer_close">Close navigation drawer</string>
+</resources>
