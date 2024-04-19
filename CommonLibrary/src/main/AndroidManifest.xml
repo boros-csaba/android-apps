@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.boroscsaba.commonlibrary">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application>
+        <activity
+            android:name=".drawer.SendFeedbackActivity"
+            android:label="@string/navigation_drawer_feedback"
+            android:parentActivityName=".drawer.SendFeedbackActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boroscsaba.commonlibrary.drawer.SendFeedbackActivity" />
+        </activity>
+        <activity
+            android:name=".drawer.GoPremiumActivity"
+            android:label="@string/navigation_drawer_premium"
+            android:parentActivityName=".drawer.GoPremiumActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".backup.BackupActivity"
+            android:label="@string/navigation_drawer_backup"
+            android:parentActivityName=".backup.BackupActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".drawer.CloudSyncActivity"
+            android:label="@string/navigation_drawer_cloud_sync"
+            android:parentActivityName=".drawer.CloudSyncActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".drawer.DataPolicyActivity"
+            android:label="@string/navigation_drawer_data_policy"
+            android:parentActivityName=".drawer.DataPolicyActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/navigation_drawer_settings"
+            android:parentActivityName=".settings.SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".drawer.OtherAppsActivity"
+            android:label="@string/navigation_drawer_other_apps"
+            android:parentActivityName=".drawer.OtherAppsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>
